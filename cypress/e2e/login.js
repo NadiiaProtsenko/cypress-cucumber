@@ -1,12 +1,12 @@
-import { Given, When, Then } from "cypress-cucumber-preprocessor";
+import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
 
 Given('I am on the homepage', () => {
     cy.visit('https://qauto.forstudy.space/');
 })
 
 When('I fill in the login form with {string} and {string}', (email, password) => {
-    if (email) cy.get('#username').type(email);
-    if (password) cy.get('#password').type(password);
+    cy.get('#username').type(email);
+    cy.get('#password').type(password);
 })
 
 When('I click the Login button', () => {
