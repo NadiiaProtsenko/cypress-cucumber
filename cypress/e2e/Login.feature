@@ -9,7 +9,7 @@ Feature: Testing Login functionality
     Then I should <login_status>
 
     Examples:
-      | email            | password       | login_status         |
-      | guest            | welcome2qauto  | be logged in         |
-      |                  |                | see an error message |
-      | invalid@email.com| wrongpass      | see an error message |
+      | email                        | password       | login_status         |
+      | philimonovanadiya@gmail.com  | 4399828_Yflz1  | be logged in         |
+      |                              |                | see an error message |
+      | invalid@email.com            | wrongpass      | see an error message |
